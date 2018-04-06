@@ -15,5 +15,9 @@ class TaskControllerTest < ActionController::TestCase
     get :finished
     assert_response :success
   end
-
+  test "should get finished" do
+    get :reopen
+    assert_response :success
+  end
+  
 end
